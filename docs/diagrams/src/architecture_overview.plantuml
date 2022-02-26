@@ -1,0 +1,24 @@
+@startuml Architecture Overview
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+SHOW_PERSON_PORTRAIT()
+
+Person(client, "Client", "Pessoa que necessita de um cadastro")
+
+System_Boundary(c1, "Cadastro do Bem") {
+    Container(frontend, "SPA", "React", "Aplicação que fornece formulário de cadastro")
+    Container(backend, "API", "Node.js", "Aplicação que lida com as regras de negócio")
+    ContainerDb(postgreSQL, "Banco de dados", "PostgreSQL", "Armazena informações sobre os usuários")
+}
+
+System(viacep, "Sistema para consulta de cep", "Viacep")
+System(nodemailer, "Sistema para envio de email", "Nodemailer")
+
+Rel(client, frontend, "Preenche formulário em")
+Rel(frontend, backend, "Envia dados do formulário para", "HTTPS/JSON")
+Rel(backend, postgreSQL, "Lê e escreve em", "Postgre Protocol")
+Rel(backend, viacep, "Envia consulta de cep para", "HTTPS/JSON")
+Rel(backend, nodemailer, "Envia email utilizando", "HTTPS/JSON")
+Rel(nodemailer, client, "Redireciona email para", "HTTPS/JSON")
+
+@enduml

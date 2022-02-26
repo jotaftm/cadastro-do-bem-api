@@ -1,0 +1,8 @@
+{
+    "name": "cadastro-do-bem-api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:jotaftm/cadastro-do-bem-api.git",
+    "author": "José Flávio <jotaftm@gmail.com>",
+    "license": "MIT"
+}
