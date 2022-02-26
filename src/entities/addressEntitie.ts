@@ -12,7 +12,7 @@ export default class Address {
   @Column()
   publicPlace!: string;
 
-  @Column()
+  @Column({ nullable: true })
   complement!: string;
 
   @Column()
