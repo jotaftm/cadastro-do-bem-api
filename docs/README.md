@@ -1,7 +1,8 @@
 # Cadastro do bem API
 A Cadastro do bem é uma aplicação para registro de dados dos clientes da Bemol visando um melhor atendimento nos diversos canais da empresa.
 
-Toda a aplicação está contida dentro do diretório `src`.
+#### Toda a aplicação está contida dentro do diretório `src`.
+#### Não esqueça de popular o arquivo `.env` com os dados contidos em  `.env.example`.
 # 
 ## Iniciando
 

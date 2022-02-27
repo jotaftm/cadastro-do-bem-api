@@ -1,6 +1,7 @@
 import { getRepository } from "typeorm";
 import { User, Address } from "../entities";
 import { GenericError } from "../errors/genericError";
+import { sendMail } from "./mailService";
 
 interface BodyCreateUser {
   primaryName: string;
@@ -35,6 +36,14 @@ export const createUser = async (body: BodyCreateUser) => {
     });
 
     await addressRepository.save(newAddress);
+
+    sendMail(
+      user.email,
+      "Confirmação de conta",
+      `Olá ${user.primaryName}, bem vindo(a) à nossa plataforma!
+      Clique neste link pra confirmar seu email: ${process.env.BASE_URL_FRONT}${user.uuid}`
+    );
+    //TODO: tratar erro ou sucesso no envio do email
 
     return await userRepository.findOne(user.uuid);
   } catch (err) {
