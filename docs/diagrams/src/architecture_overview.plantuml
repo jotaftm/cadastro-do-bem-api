@@ -15,9 +15,9 @@ System(viacep, "Sistema para consulta de cep", "Viacep")
 System(nodemailer, "Sistema para envio de email", "Nodemailer")
 
 Rel(client, frontend, "Preenche formulário em")
+Rel(frontend, viacep, "Envia consulta de cep para", "HTTPS/JSON")
 Rel(frontend, backend, "Envia dados do formulário para", "HTTPS/JSON")
 Rel(backend, postgreSQL, "Lê e escreve em", "Postgre Protocol")
-Rel(backend, viacep, "Envia consulta de cep para", "HTTPS/JSON")
 Rel(backend, nodemailer, "Envia email utilizando", "HTTPS/JSON")
 Rel(nodemailer, client, "Redireciona email para", "HTTPS/JSON")
 

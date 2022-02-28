@@ -1,0 +1,23 @@
+1.A solução deve ser disponibilizada em Cloud ou On-premise? 
+R: Visando a problemática proposta, criar uma solução omnichannel, e pelo tamanho da empresa bemol 
+com diversas unidades físicas, acredito que por uma questão de economia em infraestrutura e comodidade 
+a solução deveria ser disponibilizada em cloud.
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa solução, responda qual
+ferramenta acreditas ser apropriada para o controle de tarefas da equipe, a ferramenta é ágil? 
+R: Tive boas experiências utilizando whimsical para documentação em geral, e trello para criação 
+dos cards/kanban e dividir o trabalho entre a equipe, mantendo sempre ao alcance de todos o andamento 
+em tempo real do projeto.
+
+3. Você se sente capaz de liderar esta equipe? Por quê? 
+R: Já tive experiência liderando equipes no curso da Kenzie, gostei da experiência e contribuí com o 
+melhor de mim, porém para um projeto voltado para o mercado acredito que ainda preciso de mais experiência.
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria? 
+- Verificação do cep no back-end como proposto no primeiro diagrama;
+- Mobile first no front-end;
+- Trataria melhores respostas no front-end de acordo com as respostas da API.
+
+5. Acha válido esse desafio para o processo que está participando?
+R: Este foi um ótimo desafio para a posição de software engineer, pois com ele é possível traçar os 
+diferentes tipos de profissionais, diferentemente de desafios de lógica, como codewars e afins.
