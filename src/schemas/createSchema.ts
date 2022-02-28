@@ -28,7 +28,7 @@ export const userSchema = yup.object().shape({
   address: yup.object().shape({
     zipCode: yup
       .string()
-      .matches(/^\d{5}-\d{3}$/, "invalid zipCode format")
+      .matches(/^\d{8}$/, "invalid zipCode format")
       .required("zipCode is required"),
     publicPlace: yup.string().required("publicPlace is required"),
     complement: yup.string(),

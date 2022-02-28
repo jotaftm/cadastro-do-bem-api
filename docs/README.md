@@ -54,7 +54,7 @@ E finalmente, para executar as migrations e criar as tabelas no seu db:
 	"birthDate": "1994/02/24",
 	"password": "12345",
 	"address": {
-		"zipCode": "01153-000",
+		"zipCode": "01153000",
 		"publicPlace": "Rua Florêncio de Abreu, 120",
 		"complement": "Casa",
 		"district": "Centro",
